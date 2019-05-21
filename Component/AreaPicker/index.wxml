@@ -1,0 +1,19 @@
+<view class="area-picker-mask {{maskShow ? (visible ? 'show':'hide') : 'hide'}}">
+</view>
+<view class="area-picker-view {{visible ? 'show' : 'hide'}}">
+    <view class="area-picker-view-btns">
+        <text class="cancle" bindtap="handleNYZAreaCancle">取消</text>
+        <text class="sure" bindtap="handleNYZAreaSelect" data-province="{{province}}" data-city="{{city}}" data-area="{{area}}">确定</text>
+        <picker-view class="view" indicator-style="height: 35px;" bindchange="handleNYZAreaChange" value="{{value}}">
+            <picker-view-column>
+                <view class="colum" wx:for="{{provinces}}" wx:for-index='index' wx:key='{{index}}'>{{item.name}}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view class="colum" wx:for="{{citys}}" wx:for-index='index' wx:key='{{index}}'>{{item.name}}</view>
+            </picker-view-column>
+            <picker-view-column>
+                <view class="colum" wx:for="{{areas}}" wx:for-index='index' wx:key='{{index}}'>{{item.name}}</view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</view>
