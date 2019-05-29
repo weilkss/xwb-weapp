@@ -1,5 +1,6 @@
 {
 	"usingComponents": {
-		"AreaPicker": "../../Component/AreaPicker/index"
+		"AreaPicker": "../../Component/AreaPicker/index",
+		"Radio": "../../Component/Radio/index"
 	}
 }

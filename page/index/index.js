@@ -6,7 +6,13 @@ Page({
         province: '',
         city: '',
         area: '',
-        visible: false
+        visible: false,
+        //radio
+        radioData: [{
+            text: "男"
+        }, {
+            text: "女"
+        }]
     },
     sureSelectAreaListener(e) {
         this.setData({
@@ -20,5 +26,9 @@ Page({
         this.setData({
             visible: true
         })
-    }
+    },
+    // radio
+    onChange(e) {
+        console.log(e)
+    },
 })

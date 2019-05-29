@@ -2,9 +2,9 @@
  * 地区选择 三级联动
  * created by wxb007 on 2019/5/20 0013 11:06
  * 
- * @param {visible} 控制选择层的显示和隐藏
- * @param {maskShow} 是否显示蒙层
- * @param {cityData} 省市区数据
+ * @param {visible}  	控制选择层的显示和隐藏
+ * @param {maskShow}    是否显示蒙层
+ * @param {cityData}    省市区数据
  */
 
 Component({

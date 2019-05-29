@@ -1,2 +1,6 @@
-<button bindtap='chooseAddress'>{{province == ''?'点我选择地区':province + '-' + city + '-' + area}}</button>
+<button bindtap='chooseAddress'>
+    {{province == ''?'点我选择地区':province + '-' + city + '-' + area}}</button>
 <AreaPicker visible="{{visible}}" cityData='{{cityData}}' bind:sureSelectArea="sureSelectAreaListener"></AreaPicker>
+
+<view>单选框</view>
+<Radio bind:onChange="onChange" radioList="{{radioData}}" />

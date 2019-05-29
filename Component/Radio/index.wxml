@@ -1,0 +1,6 @@
+<view class='radio-box {{flex?"flex":""}}' style='font-size:{{size}}rpx'>
+    <view class='radio-item' wx:for="{{radioList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <view style='width:{{size}}rpx;height:{{size}}rpx;border-radius: {{size}}rpx; background-color:{{defaultValue == index?color:"#fff"}}' class='radio-input {{defaultValue == index ? "radio-input-checked" :""}}' id="{{index}}" bindtap='selectTap'></view>
+        <text class='radio-text'>{{item.text}}</text>
+    </view>
+</view>
