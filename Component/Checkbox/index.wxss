@@ -1,1 +1,93 @@
-/* Component/Checkbox/index.wxss */
+.checkbox-box {
+    padding: 0;
+}
+
+.checkbox-box.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+	padding: 20rpx;
+}
+
+.checkbox-input {
+    border: 2rpx solid #999;
+    transition: all 0.3s;
+}
+
+.checkbox-text {
+    margin-left: 20rpx;
+}
+
+.checkbox-input {
+    border: 2rpx solid #999;
+    transition: all 0.3s;
+}
+
+.checkbox-input.checkbox-input-checked {
+    border-color: transparent;
+    position: relative;
+}
+
+.checkbox-input.checkbox-input-checked::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 10%;
+    width: 10%;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-radius: 100% 0 0 0;
+    bottom: 30%;
+    right: 53%;
+    animation: checkedAfter 0.6s forwards ease-out;
+}
+
+.checkbox-input.checkbox-input-checked::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0%;
+    width: 10%;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    border-radius: 0 100% 0 0;
+    top: 45%;
+    left: 10%;
+    animation: checkedBefore 0.3s forwards ease-in;
+}
+
+@keyframes checkedAfter {
+    0% {
+        height: 0;
+        bottom: 30%;
+        right: 53%;
+    }
+
+    50% {
+        height: 0;
+        bottom: 30%;
+        right: 53%;
+    }
+
+    100% {
+        height: 60%;
+        bottom: 20%;
+        right: 32.5%;
+    }
+}
+
+@keyframes checkedBefore {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 40%;
+        top: 38%;
+        left: 28%;
+    }
+}

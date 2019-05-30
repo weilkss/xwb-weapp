@@ -3,4 +3,7 @@
 <AreaPicker visible="{{visible}}" cityData='{{cityData}}' bind:sureSelectArea="sureSelectAreaListener"></AreaPicker>
 
 <view>单选框</view>
-<Radio bind:onChange="onChange" radioList="{{radioData}}" />
+<Radio bind:onChange="onChangeRadio" size="32" color="red" radioList="{{radioData}}" />
+
+<view>复选框</view>
+<Checkbox bind:onChange="onChangeCheckbox" size="32" color="red" checkKey="ispay" ckeckboxList="{{checkboxData}}" />

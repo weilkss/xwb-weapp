@@ -1,2 +1,6 @@
-<!--Component/Checkbox/index.wxml-->
-<text>Component/Checkbox/index.wxml</text>
+<view class='checkbox-box {{flex?"flex":""}}' style='font-size:{{size}}rpx'>
+    <view class='checkbox-item' wx:for="{{ckeckboxList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <view class='checkbox-input {{item.checked?"checkbox-input-checked":""}}' style='width:{{size}}rpx;height:{{size}}rpx;border-radius: {{size}}rpx; background-color:{{item.checked?color:"#fff"}}' id='{{index}}' bindtap='selectCheck'></view>
+        <text class='checkbox-text'>{{item.text}}</text>
+    </view>
+</view>
