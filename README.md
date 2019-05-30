@@ -4,6 +4,7 @@
 
 ##### - [AreaPicker] 省市区三级联动选择器
 ##### - [Radio]      单选框
+##### - [checkbox]   复选框
 
 ### 文档
 #### AreaPicker
