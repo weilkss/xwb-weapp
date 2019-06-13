@@ -36,7 +36,7 @@
 */
 
 ```
-### checkbox
+#### checkbox
 ```js
 
 /**
@@ -53,7 +53,7 @@
 
 ```
 
-### 其他说明
+#### 其他说明
 
 -   city json数据 [Administrative-divisions-of-China](https://github.com/modood/Administrative-divisions-of-China)
 
