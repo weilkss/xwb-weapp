@@ -2,6 +2,7 @@
 	"usingComponents": {
 		"AreaPicker": "../../Component/AreaPicker/index",
 		"Radio": "../../Component/Radio/index",
-		"Checkbox": "../../Component/Checkbox/index"
+		"Checkbox": "../../Component/Checkbox/index",
+		"Wave": "../../Component/Wave/index"
 	}
 }

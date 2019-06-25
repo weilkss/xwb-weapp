@@ -1,6 +1,7 @@
 {
 	"pages": [
-		"page/index/index"
+		"page/index/index",
+		"Component/Wave/index"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

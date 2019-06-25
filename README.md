@@ -52,6 +52,18 @@
  */
 
 ```
+### wave
+```js
+
+/**
+ * 单选框 wave
+ * created by wxb007 on 2019/6/25 0013 14:00
+ * 
+ * @param {direction}    方向 top和bottom
+ * @param {color}      	 填充颜色
+ */
+ 
+```
 
 ### 其他说明
 
